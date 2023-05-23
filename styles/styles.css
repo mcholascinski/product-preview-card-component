@@ -1,0 +1,140 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-cyan: hsl(158, 36%, 37%);
+    --primary-cream: hsl(30, 38%, 92%);
+    --neutral-dark-blue: hsl(212, 21%, 14%);
+    --neutral-blue: hsl(228, 12%, 48%);
+    --neutral-white: hsl(0, 0%, 100%);
+    --hover-cyan: #1A4032;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--neutral-blue);
+    background-color: var(--primary-cream);
+    line-height: 23px;
+}
+
+h2 {
+    font-family: 'Fraunces', serif;
+    font-size: 32px;
+    color: var(--neutral-dark-blue);
+    line-height: 32px;
+}
+
+h3 {
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    line-height: 15px;
+    margin: 0;
+}
+
+button {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--neutral-white);
+    background-color: var(--primary-cyan);
+    border-radius: 8px;
+    border: none;
+    width: 100%;
+    padding: 1rem 0 1rem 0;
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+}
+
+button:hover {
+    background-color: var(--hover-cyan);
+}
+
+.price {
+    color: var(--primary-cyan);
+}
+
+.old-price {
+    font-size: 13px;
+    text-decoration: line-through;
+    padding-left: 1.18rem;
+}
+
+.container {
+    margin: 1rem;
+    display: flex;
+    border-radius: 10px;
+    background-color: var(--neutral-white);
+    overflow: hidden;
+    max-width: 600px;
+}
+
+.container > * {
+    flex-basis: 100%;
+}
+
+.image {
+    background-image: url("../images/image-product-desktop.jpg");
+    background-size: cover;
+    padding: 2rem;
+}
+
+.description {
+    padding: 2rem;
+}
+
+.prices {
+    display: flex;
+    align-items: center;
+}
+
+span {
+    padding-left: 0.7rem;
+}
+
+p {
+    margin: 0;
+}
+
+@media (min-width: 374px) and (max-width: 632px) {
+    .container {
+        display: block;
+        /* min-width: 343px; */
+    }
+
+    .description {
+        padding: 1.5rem;
+    }
+
+    .image {
+        background-image: url("../images/image-product-mobile.jpg");
+        height: 240px;
+    }
+  }
+
+@media (max-width: 375px) {
+    .container {
+        display: block;
+        min-width: 343px;
+    }
+
+    .description {
+        padding: 1.5rem;
+    }
+
+    .image {
+        background-image: url("../images/image-product-mobile.jpg");
+        height: 240px;
+    }
+  }
