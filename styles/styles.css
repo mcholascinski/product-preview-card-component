@@ -108,6 +108,10 @@ p {
 }
 
 @media (min-width: 374px) and (max-width: 632px) {
+    body {
+        display: block;
+    }
+
     .container {
         display: block;
         /* min-width: 343px; */
@@ -124,6 +128,10 @@ p {
   }
 
 @media (max-width: 375px) {
+    body {
+        display: block;
+    }
+
     .container {
         display: block;
         min-width: 343px;
