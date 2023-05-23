@@ -16,9 +16,7 @@
 body {
     display: flex;
     justify-content: center;
-    align-items: center;
     margin: 0;
-    height: 100vh;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     font-size: 14px;
@@ -108,9 +106,6 @@ p {
 }
 
 @media (min-width: 374px) and (max-width: 632px) {
-    body {
-        display: block;
-    }
 
     .container {
         display: block;
@@ -128,9 +123,6 @@ p {
   }
 
 @media (max-width: 375px) {
-    body {
-        display: block;
-    }
 
     .container {
         display: block;
